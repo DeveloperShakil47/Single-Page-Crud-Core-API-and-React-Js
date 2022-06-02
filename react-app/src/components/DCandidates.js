@@ -38,10 +38,10 @@ const DCandidates = ({ classes, ...props }) => {
     return (
         <Paper className={classes.paper} elevation={3}>
             <Grid container>
-                <Grid item xs={6}>
+                <Grid className="col-sm-12 col-md-12 col-lg-6">
                     <DCandidateForm {...({ currentId, setCurrentId })} />
                 </Grid>
-                <Grid item xs={6}>
+                <Grid className="col-sm-12 col-md-12 col-lg-6">
                     <TableContainer>
                         <Table>
                             <TableHead className={classes.root}>

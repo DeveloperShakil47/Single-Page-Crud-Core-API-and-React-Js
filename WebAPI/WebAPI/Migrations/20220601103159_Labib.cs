@@ -4,7 +4,7 @@
 
 namespace WebAPI.Migrations
 {
-    public partial class nreewhhf : Migration
+    public partial class Labib : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

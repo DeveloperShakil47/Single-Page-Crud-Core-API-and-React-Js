@@ -11,8 +11,8 @@ using WebAPI.Models;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(DonationDBContext))]
-    [Migration("20220530110841_nreewhhf")]
-    partial class nreewhhf
+    [Migration("20220601103159_Labib")]
+    partial class Labib
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

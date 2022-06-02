@@ -96,8 +96,8 @@ const DCandidateForm = ({ classes, ...props }) => {
 
     return (
         <form autoComplete="off" noValidate className={classes.root} onSubmit={handleSubmit}>
-            <Grid container>
-                <Grid item xs={6}>
+             <Grid container>
+                   <Grid className="col-sm-12 col-md-12 col-lg-6">
                     <TextField
                         name="fullName"
                         variant="outlined"
@@ -137,8 +137,8 @@ const DCandidateForm = ({ classes, ...props }) => {
                         </Select>
                         {errors.bloodGroup && <FormHelperText>{errors.bloodGroup}</FormHelperText>}
                     </FormControl>
-                </Grid>
-                <Grid item xs={6}>
+                </Grid>   
+                <Grid className="col-sm-12 col-md-12 col-lg-6">
 
                     <TextField
                         name="mobile"
@@ -164,7 +164,7 @@ const DCandidateForm = ({ classes, ...props }) => {
                     />
                     <div>
                         <Button
-                            variant="contained"
+                             variant="contained"
                             color="primary"
                             type="submit"
                             className={classes.smMargin}
@@ -172,7 +172,10 @@ const DCandidateForm = ({ classes, ...props }) => {
                             Submit
                         </Button>
                         <Button
-                            variant="contained"
+                         variant="contained"
+                         color="success"
+                            // variant="contained"
+                            // color="success"
                             className={classes.smMargin}
                             onClick={resetForm}
                         >
@@ -180,7 +183,7 @@ const DCandidateForm = ({ classes, ...props }) => {
                         </Button>
                     </div>
                 </Grid>
-            </Grid>
+            </Grid> 
         </form>
     );
 }
